@@ -26,6 +26,12 @@ h1 {
   font-family: 'Gochi Hand', cursive;
 }
 
+h2 {
+  padding-left: 2.5em;
+  color: #323234;
+  font-family: 'Lato', sans-serif;
+}
+
 p {
   padding-left: 4em;
   padding-right: 4em;
