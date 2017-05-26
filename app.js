@@ -7,3 +7,5 @@ if(confirmed === true){
 } else {
   console.log('The user said they were not ready... but we\'re gonna start anyway.');
 }
+
+document.querySelector('.answers').innerHTML = '<p>Answer 1: ' + q1 + '<br>Answer 2: ' + q2+ '</p>'

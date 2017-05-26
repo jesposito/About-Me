@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Lato');
 
 html {
-  color:#143539;
   font-family: 'Lato', sans-serif;
+  color: #ffffff;
+}
+
+body  {
+  background-color: #f0f0f0;
+  color:#143539;
 }
 
 header {
@@ -10,14 +15,26 @@ header {
 }
 
 footer {
-
-}
-
-body  {
-  background-color: #f0f0f0;
+  padding-left: 4em;
+  padding-right: 4em;
+  background-color: #ffffff;
 }
 
 h1 {
+  padding-left: 4em;
   color: #323234;
   font-family: 'Gochi Hand', cursive;
+}
+
+p {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+answers {
+  color: red;
+}
+
+#hiimjed {
+  padding: 2em;
 }
