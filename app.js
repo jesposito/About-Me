@@ -30,6 +30,57 @@ if(a1.toUpperCase === 'Y'||'YES') {
     alert('MmHmm, MmHmm, very interesting.');
 }
 
+//declare and ask the first question.
+var a2 = prompt('Question 1: Has Jed ever eaten a live squid?');
+//determine whether the user answered yes or no.
+if(a1.toUpperCase === 'Y'||'YES') {
+  var a1Result = 'correctly';
+  console.log('Hm... this person might know Jed.');
+  alert('MmHmm, MmHmm, very interesting.');
+  } else {
+    var a2Result = 'incorrectly';
+    console.log('Strike!');
+    alert('MmHmm, MmHmm, very interesting.');
+}
+
+//declare and ask the first question.
+var a3 = prompt('Question 1: Has Jed ever eaten a live squid?');
+//determine whether the user answered yes or no.
+if(a1.toUpperCase === 'Y'||'YES') {
+  var a1Result = 'correctly';
+  console.log('Hm... this person might know Jed.');
+  alert('MmHmm, MmHmm, very interesting.');
+  } else {
+    var a3Result = 'incorrectly';
+    console.log('Strike!');
+    alert('MmHmm, MmHmm, very interesting.');
+}
+
+//declare and ask the first question.
+var a4 = prompt('Question 1: Has Jed ever eaten a live squid?');
+//determine whether the user answered yes or no.
+if(a1.toUpperCase === 'Y'||'YES') {
+  var a4Result = 'correctly';
+  console.log('Hm... this person might know Jed.');
+  alert('MmHmm, MmHmm, very interesting.');
+  } else {
+    var a2Result = 'incorrectly';
+    console.log('Strike!');
+    alert('MmHmm, MmHmm, very interesting.');
+}
+
+//declare and ask the first question.
+var a5 = prompt('Question 1: Has Jed ever eaten a live squid?');
+//determine whether the user answered yes or no.
+if(a1.toUpperCase === 'Y'||'YES') {
+  var a1Result = 'correctly';
+  console.log('Hm... this person might know Jed.');
+  alert('MmHmm, MmHmm, very interesting.');
+  } else {
+    var a5Result = 'incorrectly';
+    console.log('Strike!');
+    alert('MmHmm, MmHmm, very interesting.');
+}
 
 //Write the user's answers to the page as they answer
-document.querySelector('.answers').innerHTML = '<p>The Quiz Master asked you whether Jed has ever eaten a live squid. You ' + a1Result + ' said ' +'\"'+a1+'\".'+'</p>'
+document.querySelector('.answers').innerHTML = '<p>The Quiz Master asked you whether Jed has ever eaten a live squid. You ' + a1Result + ' said ' +'\"'+a1+'\".'+'</p><br>'
