@@ -82,6 +82,20 @@ if(a5.toUpperCase === 'Y'||'YES') {
     alert('MmHmm, MmHmm, very interesting.');
 }
 
+//turn y into Yes and n into No for display back to the user.
+//build an array with the user's answers
+var answers = [a1,a2,a3,a4,a5];
+
+​​​for (var ​i = 0; i < answers.length; i++) {
+    if (answers[i] = 'y' || 'Y') {
+        answers[i] = 'Yes';
+    } else if (answers[i] = 'n' || 'N') {
+        answers[i] = 'No';
+      } else () {
+          answers[i] = 'something that didn\'t make sense';
+        }
+}​
+
 //Write the user's answers to the page as they answer
 document.querySelector('.answer1').innerHTML = '<p>The Quiz Master asked you whether Jed has ever eaten a live squid. You ' + a1Result + ' said ' +'\"'+a1+'\".'+'</p>'
 document.querySelector('.answer2').innerHTML = '<p>He then asked whether Jed has been to paris or not. You ' + a2Result + ' said ' +'\"'+a2+'\".'+'</p>'
