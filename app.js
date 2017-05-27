@@ -142,12 +142,12 @@ if(q5 == 'Y'||q5=='YES') {
 
 
 //Write the user's answers to the appropriate divs on the page as they answer
-document.querySelector('.answer1').innerHTML = '<p>The Quiz Master asked you whether Jed has ever eaten a live squid. You said ' + a1 + a1Result +'.</p>'
+document.querySelector('.answer1').innerHTML = '<p class="a-p">The Quiz Master asked you whether Jed has ever eaten a live squid. You said ' + a1 + a1Result +'.</p>'
 
-document.querySelector('.answer2').innerHTML = '<p>He then asked whether Jed has been to paris or not. You said ' + a2 + a2Result +'.</p>'
+document.querySelector('.answer2').innerHTML = '<p class="a-p">He then asked whether Jed has been to paris or not. You said ' + a2 + a2Result +'.</p>'
 
-document.querySelector('.answer3').innerHTML = '<p>This next one was strange. How are you supposed to know whether or not Jed would choose to be a Polar Bear? You said ' + a3 + a3Result +'.</p>'
+document.querySelector('.answer3').innerHTML = '<p class="a-p">This next one was strange. How are you supposed to know whether or not Jed would choose to be a Polar Bear? You said ' + a3 + a3Result +'.</p>'
 
-document.querySelector('.answer4').innerHTML = '<p>Next, he asked whether people knew generally knew what an Instructional Designer was. You said ' + a4 + a4Result +'.</p>'
+document.querySelector('.answer4').innerHTML = '<p class="a-p">Next, he asked whether people knew generally knew what an Instructional Designer was. You said ' + a4 + a4Result +'.</p>'
 
-document.querySelector('.answer5').innerHTML = '<p>Thank goodness this was the last question. That quizmaster has terrible breath. He brought up the Polar Bear again, asking whether or not you like them. You said ' + a5 + a5Result +'.</p>'
+document.querySelector('.answer5').innerHTML = '<p class="a-p">Thank goodness this was the last question. That quizmaster has terrible breath. He brought up the Polar Bear again, asking whether or not you like them. You said ' + a5 + a5Result +'.</p>'

@@ -2,12 +2,23 @@
 
 html {
   font-family: 'Lato', sans-serif;
-  color: #ffffff;
 }
 
-body  {
-  background-color: #f0f0f0;
-  color:#143539;
+body {
+  background-color: #2c3e50;
+}
+
+.content {
+  margin: auto;
+  margin-top: 5em;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 80%;
+  height: 1280px;
+  background-color: #ffffff;
 }
 
 header {
@@ -15,19 +26,21 @@ header {
 }
 
 footer {
-  padding-left: 4em;
-  padding-right: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
   background-color: #ffffff;
 }
 
 h1 {
-  padding-left: 4em;
+  padding-top: 1em;
+  padding-left: 2em;
   color: #323234;
   font-family: 'Gochi Hand', cursive;
 }
 
 h2 {
-  padding-left: 2.5em;
+  padding-top: 1em;
+  padding-left: 2.6em;
   color: #323234;
   font-family: 'Lato', sans-serif;
 }
@@ -37,10 +50,25 @@ p {
   padding-right: 4em;
 }
 
-answers {
-  color: red;
+.a-p {
+  padding: 1px;
 }
 
-#hiimjed {
-  padding: 2em;
+hr {
+  border-top: 5px solid #2c3e50;
+}
+
+.answers {
+  padding-left: 4em;
+  padding-right: 4em;
+  margin-bottom: .5px;
+}
+
+.answer1, .answer2, .answer3, .answer4, .answer5 {
+  background-color: #34495e;
+  color:#ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: .02px;
+  padding-bottom: .02px;
 }
