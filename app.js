@@ -15,7 +15,7 @@ if(confirmed === true){
     //let the user know we can't stop it now.
     console.log('The user said they were not ready... but we\'re gonna start anyway.');
     alert('Ah nuts. I already sen\'t for the Quiz Master. He\'ll be here any minute. Be a pal and do it anyway, will ya?');
-}
+    }
 //introduce the quiz maaster who will be asking the questions.
 alert('You called? Who needs quizzing?');
 //razz the user a little for fun.
@@ -33,21 +33,19 @@ if(q1 == 'Y'||q1 == 'YES') { //checking for either y or yes.
   var a1Result = ' which was correct';
   console.log('Hm... this person might know Jed.');
   alert('MmHmm, MmHmm, very interesting.');
-  }
-  else if (q1 == 'N'||q1=='NO') {
+} else if (q1 == 'N'||q1=='NO') {
     var a1 = inQuote+'No'+outQuote;
     var a1Result = ' which was incorrect';
     console.log('Strike!');
     alert('MmHmm, MmHmm, very interesting.');
-    }
-    else if (q1 == '') {
+  } else if (q1 == '') {
       var a1 = 'nothing, ';
       var a1Result = ' which was kind of weird'
-      }
-      else {
+    } else {
         var a1 = inQuote+q1+outQuote;
+        a1 = a1.toLowerCase();
         var a1Result =  ' which made no sense';
-        };
+      };
 
 //declare and ask the second question.
 var q2 = prompt('Question 2: Has Jed ever been to Paris?');
@@ -58,21 +56,19 @@ if(q2 == 'N'||q2 =='NO') {
   var a2Result = ' which was correct';
   console.log('Not yet, anyway.');
   alert('MmHmm, MmHmm, very interesting.');
-  }
-  else  if (q2 == 'Y'||q2=='YES') {
+} else  if (q2 == 'Y'||q2=='YES') {
     var a2 = inQuote+'Yes'+outQuote;
     var a2Result = ' which was incorrect';
     console.log('Strike!');
     alert('MmHmm, MmHmm, very interesting.');
-    }
-    else if (q2 == '') {
+  } else if (q2 == '') {
       var a2 = 'nothing, ';
       var a2Result = ' which was kind of weird'
-      }
-      else {
-        var a2 = q2;
+    } else {
+        var a2 = inQuote+q2+outQuote;
+        a2 = a2.toLowerCase();
         var a2Result = ' which made no sense';
-        };
+      };
 
 //declare and ask the third question.
 var q3 = prompt('Question 3: If Jed were an animal, would he be a Polar Bear?');
@@ -83,21 +79,19 @@ if(q3 == 'Y'||q3=='YES') {
   var a3Result = ' which was correct';
   console.log('YES, BECAUSE THEY ARE THE BEST.');
   alert('MmHmm, MmHmm, very interesting.');
-  }
-  else  if (q3 == 'N'||q3=='NO') {
+} else  if (q3 == 'N'||q3=='NO') {
     var a3 = inQuote+'No'+outQuote;
     var a3Result = ' which was incorrect';
     console.log('Strike!');
     alert('MmHmm, MmHmm, very interesting.');
-    }
-    else if (q3 == '') {
+  } else if (q3 == '') {
       var a3 = 'nothing, ';
       var a3Result = ' which was kind of weird'
-      }
-      else {
-        var a3 = q3;
+    } else {
+        var a3 = inQuote+q3+outQuote;
+        a3 = a3.toLowerCase();
         var a3Result =  ' which made no sense';
-        };
+      };
 
 //declare and ask the fourth question.
 var q4 = prompt('Question 4: When Jed shares his profession, do people usually look at him quizically?');
@@ -108,21 +102,19 @@ if(q4 == 'Y'||q4=='YES') {
   var a4Result = ' which was correct';
   console.log('What\'s an Instructional Designer?');
   alert('MmHmm, MmHmm, very interesting.');
-  }
-  else  if (q4 == 'N'||q4=='NO') {
+} else  if (q4 == 'N'||q4=='NO') {
     var a4 = inQuote+'No'+outQuote;
     var a4Result = ' which was incorrect';
     console.log('Strike!');
     alert('MmHmm, MmHmm, very interesting.');
-    }
-    else if (q4 == '') {
+  } else if (q4 == '') {
       var a4 = 'nothing, ';
       var a4Result = ' which was kind of weird'
-      }
-      else {
-        var a4 = q4;
+    } else {
+        var a4 = inQuote+q4+outQuote;
+        a4 = a4.toLowerCase();
         var a4Result = ' which made no sense';
-        };
+      };
 
 //declare and ask the fifth question.
 var q5 = prompt('Question 5: Do you like Polar Bears, too?');
@@ -133,21 +125,19 @@ if(q5 == 'Y'||q5=='YES') {
   var a5Result = ' which was correct';
   console.log('HECK YES YOU DO, BECAUSE THEY\'RE FREAKING AWESOME!');
   alert('MmHmm, MmHmm, very interesting.');
-  }
-  else  if (q5 == 'N'||q5=='NO') {
+} else  if (q5 == 'N'||q5=='NO') {
     var a5 = inQuote+'No'+outQuote;
     var a5Result = ' which was incorrect';
     console.log('Strike!');
     alert('MmHmm, MmHmm, very interesting.');
-    }
-    else if (q5 == '') {
+  } else if (q5 == '') {
       var a5 = 'nothing, ';
       var a5Result = ' which was kind of weird'
-      }
-      else {
-        var a5 = q5;
+    } else {
+        var a5 = inQuote+q5+outQuote;
+        a5 = a5.toLowerCase();
         var a5Result = ' which made no sense';
-        };
+      };
 
 
 
