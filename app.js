@@ -54,7 +54,10 @@ if(q2 == 'N'||q2 =='NO') {
       var a2Result = 'incorrectly';
       console.log('Strike!');
       alert('MmHmm, MmHmm, very interesting.');
-  }
+  }    else {
+        var a2 = q2;
+        var a2Result = 'something that made no sense.';
+      };
 
 //declare and ask the third question.
 var q3 = prompt('Question 3: If Jed were an animal, would he be a Polar Bear?');
@@ -70,7 +73,10 @@ if(q3 == 'Y'||q3=='YES') {
       var a3Result = 'incorrectly';
       console.log('Strike!');
       alert('MmHmm, MmHmm, very interesting.');
-  }
+  }    else {
+        var a3 = q3;
+        var a3Result = 'something that made no sense.';
+      };
 
 //declare and ask the fourth question.
 var q4 = prompt('Question 4: When Jed shares his profession, do people usually look at him quizically?');
@@ -86,7 +92,10 @@ if(q4 == 'Y'||q4=='YES') {
       var a4Result = 'incorrectly';
       console.log('Strike!');
       alert('MmHmm, MmHmm, very interesting.');
-  }
+  }     else {
+        var a4 = q4;
+        var a4Result = 'something that made no sense.';
+      };
 
 //declare and ask the fifth question.
 var q5 = prompt('Question 5: Do you like Polar Bears, too?');
@@ -97,12 +106,15 @@ if(q5 == 'Y'||q5=='YES') {
   var a5Result = 'correctly';
   console.log('HECK YES YOU DO, BECAUSE THEY\'RE FREAKING AWESOME!');
   alert('MmHmm, MmHmm, very interesting.');
-} else  if (q5 = 'N'||q5=='NO') {
+} else  if (q5 == 'N'||q5=='NO') {
       var a5 = 'No';
       var a5Result = 'incorrectly';
       console.log('Strike!');
       alert('MmHmm, MmHmm, very interesting.');
-  }
+  }     else {
+        var a5 = q5;
+        var a5Result = 'something that made no sense.';
+      };
 
 
 
