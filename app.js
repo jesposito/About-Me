@@ -20,9 +20,9 @@ if(confirmed === true){
 var name = prompt('Oh! I almost forgot. What should I call you?');
 
 //introduce the quiz maaster who will be asking the questions.
-alert('You called? Who needs quizzing?');
+alert('Quiz Master: You called? Who needs quizzing?');
 //razz the user a little for fun.
-alert('Oh... it\'s this one. (sigh) alright then, ' +name+ '. Let\'s get it over with.');
+alert('Quiz Master: Oh... it\'s this one. (sigh) alright then, ' +name+ '. Let\'s get it over with.');
 
 //declare and ask the first question.
 var q1 = prompt('Question 1: Has Jed ever eaten a live squid?');
