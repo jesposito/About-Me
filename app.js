@@ -16,10 +16,13 @@ if(confirmed === true){
     console.log('The user said they were not ready... but we\'re gonna start anyway.');
     alert('Ah nuts. I already sen\'t for the Quiz Master. He\'ll be here any minute. Be a pal and do it anyway, will ya?');
     }
+
+var name = prompt('Oh! I almost forgot. What should I call you?');
+
 //introduce the quiz maaster who will be asking the questions.
 alert('You called? Who needs quizzing?');
 //razz the user a little for fun.
-alert('Oh... it\'s this one. (sigh) alright then. Let\'s get it over with.');
+alert('Oh... it\'s this one. (sigh) alright then, ' +name+ '. Let\'s get it over with.');
 
 //declare and ask the first question.
 var q1 = prompt('Question 1: Has Jed ever eaten a live squid?');
