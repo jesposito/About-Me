@@ -112,7 +112,7 @@ if(q4 == 'Y'||q4=='YES') {
     alert('MmHmm, MmHmm, very interesting.');
   } else if (q4 == '') {
       var a4 = 'nothing, ';
-      var a4Result = ' which was kind of weird'
+      var a4Result = ' which was kind of weird';
     } else {
         var a4 = inQuote+q4+outQuote;
         a4 = a4.toLowerCase();
@@ -153,4 +153,4 @@ document.querySelector('.answer3').innerHTML = '<p class="a-p">This next one was
 
 document.querySelector('.answer4').innerHTML = '<p class="a-p">Next, he asked whether people generally knew what an Instructional Designer was. You said ' + a4 + a4Result +'.</p>'
 
-document.querySelector('.answer5').innerHTML = '<p class="a-p">Thank goodness this was the last question. That quizmaster has terrible breath. He brought up the Polar Bear again, asking whether or not you like them. You said ' + a5 + a5Result +'.</p>'
+document.querySelector('.answer5').innerHTML = '<p class="a-p">Thank goodness this was the last question. That Quiz Master fool has terrible breath. He brought up the Polar Bear again, asking whether or not you like them. You said ' + a5 + a5Result +'.</p>'
