@@ -18,17 +18,17 @@ body {
   position: absolute;
   width: 80%;
   height: 1280px;
-  background-color: #ffffff;
+  background-color: #ecf0f1;
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #ecf0f1;
 }
 
 footer {
   padding-left: 2em;
   padding-right: 2em;
-  background-color: #ffffff;
+  background-color: #ecf0f1;
 }
 
 h1 {
