@@ -17,3 +17,8 @@ var questions = [
 for (i = 0; i < questions.length; i++) {
   console.log(questions[i][0]);
 }
+
+//iterate through the questions array prompting the user for input with each question one time
+for (i = 0; i < questions.length; i++) {
+  var answer = prompt(questions[i][0]);
+}
