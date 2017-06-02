@@ -43,7 +43,7 @@ var questions = [
 
 //iterate through the questions array, asking each question, recording the answer and providing feedback
 // noprotect
-for (i = 1; i <= questions.length; i++) {
+for (var i = 1; i <= questions.length; i++) {
   //adjust the user's position in the quiz.
   position++;
   //ask the question and place the user's response into the appropriate place in the questions array
