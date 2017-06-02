@@ -76,7 +76,6 @@ for (var i = 1; i <= questions.length; i++) {
 //log the current position to the console
 console.log(position);
 
-//start building question six which will give the user four chances to guess a random number, letting them know if they were too high or too low each time.
 //Grab a random number between 1 and 30
-var randNum = Math.floor( Math.random() * 30) + 1;
-console.log(randNum);
+var randNum = Math.floor(Math.random() * 30) + 1;
+//give the user four chances to guess the random number
