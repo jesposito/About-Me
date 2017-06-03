@@ -144,8 +144,10 @@ for (var k = 6; k > 0; k--) {
   //adjust the user's answer to account for edge cases
   if (q7array[2].toUpperCase() == q7array[1][0] || q7array[2].toUpperCase() == q7array[1][1] || q7array[2].toUpperCase() == q7array[1][2]) {
     console.log('right!');
+    document.querySelector('.answer7').innerHTML = '<p>The Quiz Master asked you to guess where else Jed has lived. You correctly guessed' + q7array[2] + '.</p>';
     break;
   } else {
+    document.querySelector('.answer7').innerHTML = '<p>The Quiz Master asked you to guess where else Jed has lived. Your last guess (incorrect) was ' + q7array[2] + '.</p>';
     console.log('wrong');
     q7array[2] = prompt('Try again!');
   }
