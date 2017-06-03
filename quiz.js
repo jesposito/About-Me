@@ -10,9 +10,6 @@ var totalQuestions = 7;
 var correct = 0;
 var quizStatus = correct + ' correct out of ' + totalQuestions;
 
-//write the quiz status to the page.
-document.querySelector('.score').innerHTML = '<p>You got ' + quizStatus + '.' + '</p>';
-
 //welcome the user and ask them if they're ready to take the quiz.
 var confirmed = confirm('Welcome! Before you go any further, I\'d like to find out how well you know me. Are you ready for a quiz?');
 //determine whether or not they're ready and respond.
@@ -28,6 +25,8 @@ if(confirmed === true){
 
 //ask the user for their name and store it.
 var name = prompt('Oh! I almost forgot. What should I call you?');
+//write the quiz status to the page.
+document.querySelector('.score').innerHTML = '<p>' + name + ', ' + 'you got ' + quizStatus + '.' + '</p>';
 
 //introduce the quiz maaster who will be asking the questions.
 alert('Quiz Master: You called? Who needs quizzing?');
@@ -88,7 +87,7 @@ console.log(randNum);
 //give the user four chances to guess the random number
 alert('Alright, smarty-pants. If you know Jed so well, let\'s see if you can guess what number he\'s thinking of.');
 var q6 = prompt('I\'ll even give you a hint. It\s between 1 and 30');
-
+var q6Result = false;
 //loop will give the user 4 chances to get the question correct before moving on.
 for (var j = 3; j > 0; j--) {
   //shot or shots? Grammar is important. Let's find out!
@@ -109,8 +108,14 @@ for (var j = 3; j > 0; j--) {
   }
   else {
     console.log('Bingo! You got it ' + name + '! Time for question #7.' );
+    q6Result = true;
     position++;
     correct++;
   }
   console.log('j = ' + j);
+}
+if (q6Result == true){
+  document.querySelector('.answer6').innerHTML = '<p>The Quiz Master asked you to guess a number between 1 and 30 . You nailed it.</p>';
+}else{
+  document.querySelector('.answer6').innerHTML = '<p>The Quiz Master asked you to guess a number between 1 and 30 . You didn\'t manage to guess the number ' + randNum + '.' + '</p>';
 }
