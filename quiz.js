@@ -1,5 +1,6 @@
 'use strict';
 
+var space = ' ';
 var inQuote = ' \"';
 var outQuote = '\" ';
 var outQuote2 = '\"';
@@ -43,7 +44,7 @@ var questions = [
 
 //iterate through the questions array, asking each question, recording the answer and providing feedback
 // noprotect
-for (var i = 1; i <= questions.length; i++) {
+for (var i = 1; i <= questions.length - 1; i++) {
   //adjust the user's position in the quiz.
   position++;
   //ask the question and place the user's response into the appropriate place in the questions array
@@ -68,7 +69,7 @@ for (var i = 1; i <= questions.length; i++) {
     //write the user's answer to the page and let them know if it was right or wrong.
     document.querySelector('.answer' + i).innerHTML = '<p>The Quiz Master asked, ' + inQuote + questions[i][0] + outQuote + 'You responded with' + inQuote + questions[i][4] + outQuote2 + '. ' + questions[i][2] + '</p>';
   } else if (questions[i][4] == 'a silent, steely-eyed stare') {
-    document.querySelector('.answer' + i).innerHTML = '<p>The Quiz Master asked, ' + inQuote + questions[i][0] + outQuote + 'You responded with' + questions[i][4] + '. ' + questions[i][1] + '</p>';
+    document.querySelector('.answer' + i).innerHTML = '<p>The Quiz Master asked, ' + inQuote + questions[i][0] + outQuote + 'You responded with' + space + questions[i][4] + '. ' + questions[i][1] + '</p>';
   } else {
     document.querySelector('.answer' + i).innerHTML = '<p>The Quiz Master asked, ' + inQuote + questions[i][0] + outQuote + 'You responded with' + inQuote + questions[i][4] + outQuote2 + '. ' + questions[i][1] + '</p>';
   }
@@ -78,4 +79,35 @@ console.log(position);
 
 //Grab a random number between 1 and 30
 var randNum = Math.floor(Math.random() * 30) + 1;
+//Log the random number for debugging/cheating purposes
+console.log(randNum);
+
 //give the user four chances to guess the random number
+alert('Alright, smarty-pants. If you know Jed so well, let\'s see if you can guess what number he\'s thinking of.');
+var q6 = prompt('I\'ll even give you a hint. It\s between 1 and 30');
+
+//loop will give the user 4 chances to get the question correct before moving on.
+for (var j = 3; j > 0; j--) {
+  //shot or shots? Grammar is important. Let's find out!
+  if (j === 1) {
+    var shot = 'shot';
+  } else {
+    var shot = 'shots';
+  }
+  //Now we'll see if they guessed correctly.
+  if (q6 != randNum) {
+    if (q6 < randNum) {
+      q6 = prompt('Not quite. Guess higher. You\'ve got ' + j + ' ' + shot + ' left.');
+    } else if (q6 > randNum ) {
+      q6 = prompt('Not quite. Guess lower. You\'ve got ' + j + ' ' + shot + ' left.');
+    } else if (isNaN(q6) === true) {
+      q6 = prompt('That\'s not a number, fool. Try again.');
+    }
+  }
+  else {
+    console.log('Bingo! You got it ' + name + '! Time for question #7.' );
+    position++;
+    correct++;
+  }
+  console.log('j = ' + j);
+}
