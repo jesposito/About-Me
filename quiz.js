@@ -10,6 +10,9 @@ var totalQuestions = 7;
 var correct = 0;
 var quizStatus = correct + ' correct out of ' + totalQuestions;
 
+//write the quiz status to the page.
+document.querySelector('.score').innerHTML = '<p>You got ' + quizStatus + '.' + '</p>';
+
 //welcome the user and ask them if they're ready to take the quiz.
 var confirmed = confirm('Welcome! Before you go any further, I\'d like to find out how well you know me. Are you ready for a quiz?');
 //determine whether or not they're ready and respond.
