@@ -77,12 +77,12 @@ for (var i = 1; i <= questions.length - 1; i++) {
   }
 }
 //log the current position to the console
-console.log(position);
+console.log('current position is ' + position);
 
 //Grab a random number between 1 and 30
 var randNum = Math.floor(Math.random() * 30) + 1;
 //Log the random number for debugging/cheating purposes
-console.log(randNum);
+console.log('The chosen number is' + randNum);
 
 //give the user four chances to guess the random number
 alert('Alright, smarty-pants. If you know Jed so well, let\'s see if you can guess what number he\'s thinking of.');
@@ -118,4 +118,35 @@ if (q6Result == true){
   document.querySelector('.answer6').innerHTML = '<p>The Quiz Master asked you to guess a number between 1 and 30 . You nailed it.</p>';
 }else{
   document.querySelector('.answer6').innerHTML = '<p>The Quiz Master asked you to guess a number between 1 and 30 . You didn\'t manage to guess the number ' + randNum + '.' + '</p>';
+}
+
+//start q7
+var q7array = [ 'Can you guess a state that I\'ve lived in besides Washington?', ['ARIZONA','ILLINOIS','NEVADA'], 'user answer'];
+console.log(q7array[2]);
+q7array.splice(2,1,prompt(q7array[0]));
+//check for some edge cases and fix
+if (q7array[2].toUpperCase() == 'AZ' || q7array[2].toUpperCase() == 'IL' || q7array[2].toUpperCase() == 'NV'){
+  if (q7array[2].toUpperCase() == 'AZ') {
+    q7array[2] = 'ARIZONA';
+  } else if (q7array[2].toUpperCase() == 'IL') {
+    q7array[2] = 'ILLINOIS';
+  } else {
+    q7array[2] = 'NEVADA';
+  }
+}
+else {
+  //do nothing
+}
+//now see if they're right or not
+console.log(q7array[2]);
+for (var k = 6; k > 0; k--) {
+  console.log(q7array[2]);
+  //adjust the user's answer to account for edge cases
+  if (q7array[2].toUpperCase() == q7array[1][0] || q7array[2].toUpperCase() == q7array[1][1] || q7array[2].toUpperCase() == q7array[1][2]) {
+    console.log('right!');
+    break;
+  } else {
+    console.log('wrong');
+    q7array[2] = prompt('Try again!');
+  }
 }
