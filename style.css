@@ -11,23 +11,18 @@ body {
 .content {
   margin: auto;
   margin-top: 5em;
+  margin-bottom: 1em;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   position: absolute;
   width: 80%;
-  height: 1280px;
+  height: 1000px;
   background-color: #ecf0f1;
 }
 
 header {
-  background-color: #ecf0f1;
-}
-
-footer {
-  padding-left: 2em;
-  padding-right: 2em;
   background-color: #ecf0f1;
 }
 
@@ -64,11 +59,28 @@ hr {
   margin-bottom: .5px;
 }
 
-.answer1, .answer2, .answer3, .answer4, .answer5, .answer6 {
+.answer1, .answer2, .answer3, .answer4, .answer5, .answer6, .answer7 {
   background-color: #34495e;
   color:#ffffff;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: .02px;
   padding-bottom: .02px;
+}
+
+.listdiv {
+  padding-top: 2em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+
+.list {
+  float: left;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  margin-top: 10px;
+  background-color: #f1f1f1;
 }
