@@ -26,7 +26,6 @@ if(confirmed === true){
 //ask the user for their name and store it.
 var name = prompt('Oh! I almost forgot. What should I call you?');
 
-
 //introduce the quiz maaster who will be asking the questions.
 alert('Quiz Master: You called? Who needs quizzing?');
 //razz the user a little for fun.
@@ -85,7 +84,6 @@ questionSet1(questions);
 //log the current position to the console
 console.log('current position is ' + position);
 
-
 //Question 6
 function questionNumber6() {
 //Grab a random number between 1 and 30
@@ -132,7 +130,7 @@ function questionNumber6() {
 questionNumber6();
 
 //start q7
-  function questionNumber7() {
+function questionNumber7() {
   var q7array = [ 'Can you guess a state that I\'ve lived in besides Washington?', ['ARIZONA','ILLINOIS','NEVADA'], 'user answer'];
   console.log(q7array[2]);
   q7array.splice(2,1,prompt(q7array[0]));
@@ -155,7 +153,6 @@ questionNumber6();
   if (q7array[2].toUpperCase() == q7array[1][0] || q7array[2].toUpperCase() == q7array[1][1] || q7array[2].toUpperCase() == q7array[1][2]) {
     console.log('right!');
     document.querySelector('.answer7').innerHTML = '<p>The Quiz Master asked you to guess where else Jed has lived. You correctly guessed' + q7array[2] + '.</p>';
-    break;
   } else {
     document.querySelector('.answer7').innerHTML = '<p>The Quiz Master asked you to guess where else Jed has lived. Your last guess (incorrect) was ' + q7array[2] + '.</p>';
     console.log('wrong');
