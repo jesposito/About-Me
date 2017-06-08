@@ -1,3 +1,6 @@
+body {
+  background-color: #2980b9;
+}
 main {
   margin: 100px 15px 15px 15px;
 }
@@ -17,7 +20,7 @@ a:hover {
   z-index: 100000;
 }
 #menu {
-  background: gray;
+  background: #2c3e50;
   height: 75px;
   opacity: 0.8;
 }
@@ -26,12 +29,12 @@ a:hover {
   position:fixed;
 }
 h1, h2 {
-  color: gray;
+  color: #2c3e50;
   margin-left: 15px;
   margin-bottom: 15px;
 }
 h3 {
-  color: gray;
+  color: #2c3e50;
   margin-left: 15px;
   margin-bottom: 0px;
   float: left;
@@ -49,18 +52,22 @@ ul,ol {
 #title {
   color: white;
   margin: 5px 10px 5px 15px;
+  background-color: transparent;
 }
 section{
   padding: 3px 0;
   margin: 3px;
   float: left;
   border: 1px solid lightgray;
+  border-radius: 10px;
   min-width: 218px;
+  background-color: #ecf0f1;
 }
 #header-section {
   padding: 15px;
   border: none;
   float:left;
+  background-color: transparent;
 }
 p {
   padding-right: 5px;
@@ -119,13 +126,14 @@ footer {
   margin-left: 0px;
   position:fixed;
   z-index: 100000;
-  background: gray;
+  background: #2c3e50;
   height: 75px;
 }
 #footer-section {
   padding: 3px 3px 3px 3px;
   border: none;
   float:right;
+  background-color: transparent;
 }
 #p-footer {
   color: #fff;
